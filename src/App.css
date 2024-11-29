@@ -36,3 +36,93 @@
     transform: rotate(360deg);
   }
 }
+.appIutbound {
+  background: #204655;
+  max-width: 550px;
+  padding: 40px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.appContainer {
+  margin-top: 5%;
+}
+
+.appIutbound h1 {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.userDetails h2 {
+  display: inline-block;
+  background: #defd4c;
+  width: 100px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 3px;
+  color: #204655;
+  font-size: 35px;
+  line-height: 1;
+}
+
+.buttonsList {
+  max-width: 300px;
+  margin: 11px auto 0;
+}
+
+.twoButtons button {
+  background: #defd4c;
+  border: 0;
+  display: inline-block;
+  padding: 13px 20px;
+  cursor: pointer;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 1;
+  width: 60px;
+  height: 60px;
+}
+
+.twoButtons {
+  gap: 1px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.twoButtons button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.twoButtons button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.loneButton {}
+
+.loneButton button {
+  background: #defd4c;
+  border: 0;
+  display: inline-block;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height: 1;
+  height: 60px;
+  width: 121px;
+  border-radius: 5px;
+  margin-top: 11px;
+}
+
+body {
+  background: #afdfe1;
+}
+
+::selection {
+  background: #defd4c;
+  color: #204655;
+}

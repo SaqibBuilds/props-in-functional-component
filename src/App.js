@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import PropsInFunctionalComponents from './PropsInFunctionalComponents';
 
 function App() {
+  const [changeName, setState] = useState(0);  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="appOutbound">
+        <div class="appContainer">
+          <div class="appIutbound">
+            <h1>Props In Functional Components</h1>
+            <PropsInFunctionalComponents numberValue = {changeName}/>
+            <br></br>
+            <div class="buttonsList">
+              <div class="twoButtons">
+                <button onClick={()=> {setState(changeName+1)}}>+</button>
+                <button onClick={()=> {setState(changeName-1)}}>-</button>
+              </div>
+              <div class="loneButton">
+                <button onClick={()=> {setState(0)}}>Rest</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
